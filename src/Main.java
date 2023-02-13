@@ -1,9 +1,23 @@
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        int array[] = {1, 2, 3, 4};
+        //int array[] = {1, 2, 3, 4};
         int sum = 0;
         int product = 0;
+        int len = 0;
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Enter number of elements in array: ");
+        len = scan.nextInt();
+        System.out.println("Enter values for array (with a space in between each value): ");
+
+        int[] array = new int[len];
+
+        for(int i = 0; i < len; i++) {
+
+            array[i]= scan.nextInt();
+        }
 
         sum = sum(array);
         System.out.println("The sum of the array is: " + sum);
