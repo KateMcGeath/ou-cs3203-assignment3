@@ -52,4 +52,20 @@ public class Main {
         return value;
     }
 
+    //Method that takes in an array and outputs the reverse order.
+    public static int[] reverse(int[] array) {
+
+        int[] rev = new int[array.length];
+
+        int j = array.length;
+        for(int i = 0; i < array.length; i++) {
+
+            rev[j - 1] = array[i];
+            j--;
+        }
+
+        return rev;
+    }
+
+
 }
