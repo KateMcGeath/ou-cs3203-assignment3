@@ -25,6 +25,16 @@ public class Main {
         product = multiply(array);
         System.out.println("The product of the inputted array is: " + product);
 
+        int[] rev;
+        rev = reverse(array);
+
+        System.out.println("The reverse order of the array is: ");
+
+        for(int i = 0; i < len; i ++) {
+
+            System.out.println(rev[i] + " ");
+        }
+
     }
     //Method that takes in an array and sums up its values.
     public static int sum(int[] array) {
